@@ -12,7 +12,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const autoPlayDelay = 3000; // 3 seconds
     let isTransitioning = false;
 
-    // Clone first and last slides for infinite loop
     const firstClone = slides[0].cloneNode(true);
     const lastClone = slides[totalSlides - 1].cloneNode(true);
     firstClone.classList.add('clone');
@@ -21,16 +20,14 @@ document.addEventListener('DOMContentLoaded', function() {
     slidesContainer.appendChild(firstClone);
     slidesContainer.insertBefore(lastClone, slides[0]);
 
-    // Adjust initial position (start at index 1 because of prepended clone)
     let position = 1;
     slidesContainer.style.transform = `translateX(-${position * 100}%)`;
 
-    // Go to slide by index
     function goToSlide(index) {
         if (isTransitioning) return;
         isTransitioning = true;
         
-        position = index + 1; // +1 because of prepended clone
+        position = index + 1; 
         slidesContainer.style.transition = 'transform 0.5s ease-in-out';
         slidesContainer.style.transform = `translateX(-${position * 100}%)`;
         
@@ -44,18 +41,15 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Handle transition end for infinite loop
     slidesContainer.addEventListener('transitionend', () => {
         isTransitioning = false;
         
-        // If at first clone (end), jump to real first slide
         if (position === totalSlides + 1) {
             slidesContainer.style.transition = 'none';
             position = 1;
             slidesContainer.style.transform = `translateX(-${position * 100}%)`;
         }
         
-        // If at last clone (start), jump to real last slide
         if (position === 0) {
             slidesContainer.style.transition = 'none';
             position = totalSlides;
@@ -63,7 +57,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Next slide
     function nextSlide() {
         if (isTransitioning) return;
         position++;
@@ -77,7 +70,6 @@ document.addEventListener('DOMContentLoaded', function() {
         isTransitioning = true;
     }
 
-    // Previous slide
     function prevSlide() {
         if (isTransitioning) return;
         position--;
@@ -91,7 +83,6 @@ document.addEventListener('DOMContentLoaded', function() {
         isTransitioning = true;
     }
 
-    // Auto play
     function startAutoPlay() {
         autoPlayInterval = setInterval(nextSlide, autoPlayDelay);
     }
@@ -100,7 +91,6 @@ document.addEventListener('DOMContentLoaded', function() {
         clearInterval(autoPlayInterval);
     }
 
-    // Event listeners
     nextBtn.addEventListener('click', () => {
         nextSlide();
         stopAutoPlay();
@@ -121,11 +111,9 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Pause on hover
     const slideshow = document.querySelector('.slideshow');
     slideshow.addEventListener('mouseenter', stopAutoPlay);
     slideshow.addEventListener('mouseleave', startAutoPlay);
 
-    // Start autoplay
     startAutoPlay();
 });
