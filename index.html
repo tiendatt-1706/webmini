@@ -1,0 +1,520 @@
+<!doctype html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Khóa Học Giá Hời - Clone Final</title>
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./assets/css/reset.css" />
+        <link rel="stylesheet" href="./assets/css/style.css" />
+    </head>
+    <body>
+        <header class="header">
+            <div class="container header-inner">
+                <div class="logo">KHOAHOCNHANH.COM</div>
+
+                <div class="search-bar">
+                    <input type="text" placeholder="Tìm kiếm khóa học..." />
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+
+                <div class="header-actions">
+                    <div class="item">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span>Giỏ hàng</span>
+                    </div>
+                    <div class="item">
+                        <i class="fas fa-user-circle"></i>
+                        <span>Tài khoản</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <nav class="navigation">
+            <div class="container">
+                <ul class="nav-list">
+                    <li><a href="#">Danh mục khóa học</a></li>
+                    <li><a href="#">Khóa học lập trình</a></li>
+                    <li><a href="#">Tin học văn phòng</a></li>
+                    <li><a href="#">Ngoại ngữ</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <main class="container">
+            <section class="banner-section">
+                <div class="slideshow">
+                    <div class="slides-container">
+                        <div class="slide active">
+                            <div class="banner banner-1">
+                                <h1>HỌC TẬP KHÔNG GIỚI HẠN</h1>
+                                <p>
+                                    Kho tàng khóa học chất lượng với chi phí
+                                    tiết kiệm nhất
+                                </p>
+                                <a href="#" class="btn-banner">Đăng ký ngay</a>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="banner banner-2">
+                                <h1>Khóa Học Công Nghệ Thông Tin Chất Lượng</h1>
+                                <p>
+                                    Xây dựng tư duy logic và kỹ năng coding chuẩn quốc tế ngay từ bước đầu tiên
+                                </p>
+                                <a href="#" class="btn-banner">Khám phá ngay</a>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="banner banner-3">
+                                <h1>GIẢM GIÁ ĐẾN 50%</h1>
+                                <p>
+                                    Ưu đãi đặc biệt cho tất cả các khóa học
+                                    trong tháng này
+                                </p>
+                                <a href="#" class="btn-banner">Xem ưu đãi</a>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="slide-btn prev-btn">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="slide-btn next-btn">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                    <div class="slide-dots">
+                        <span class="slide-dot active" data-index="0"></span>
+                        <span class="slide-dot" data-index="1"></span>
+                        <span class="slide-dot" data-index="2"></span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="category-section">
+                <div class="section-header">
+                    <div class="header-left">
+                        <h2 class="title-orange">
+                            Khóa học lập trình cho người mới bắt đầu
+                        </h2>
+                        <p class="desc">
+                            Xây dựng tư duy logic và kỹ năng coding chuẩn quốc
+                            tế ngay từ bước đầu tiên
+                        </p>
+                    </div>
+                    <a href="#" class="btn-view-all">Xem thêm</a>
+                </div>
+
+                <div class="product-grid">
+                    <div class="card border-green">
+                        <span class="badge">-50%</span>
+                        <div class="card-img">
+                            <img src="./assets/img/html,css.jpg" alt="Course" />
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">
+                                HTML, CSS Từ Cơ Bản Tới Nâng Cao
+                            </h3>
+                            <div class="price-section">
+                                <span class="old-price">3.000.000đ</span>
+                                <span class="new-price">1.500.000đ</span>
+                            </div>
+                            <div class="card-footer">
+                                <span><i class="fas fa-user"></i> 9280</span>
+                                <span><i class="fas fa-heart"></i> 1517</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card border-green">
+                        <span class="badge">-50%</span>
+                        <div class="card-img">
+                            <img src="./assets/img/js.png" alt="Course" />
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">
+                                JavaScript Từ Cơ Bản Tới Nâng Cao
+                            </h3>
+                            <div class="price-section">
+                                <span class="old-price">3.000.000đ</span>
+                                <span class="new-price">1.500.000đ</span>
+                            </div>
+                            <div class="card-footer">
+                                <span><i class="fas fa-user"></i> 4985</span>
+                                <span><i class="fas fa-heart"></i> 567</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card border-green">
+                        <span class="badge">-50%</span>
+                        <div class="card-img">
+                            <img src="./assets/img/AI.jpg" alt="Course" />
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">
+                                Full Combo Khóa Học AI - Trí Tuệ Nhân Tạo Từ Cơ
+                                Bản Đến Nâng Cao
+                            </h3>
+                            <div class="price-section">
+                                <span class="old-price">4.000.000đ</span>
+                                <span class="new-price">1.999.999đ</span>
+                            </div>
+                            <div class="card-footer">
+                                <span><i class="fas fa-user"></i> 3262</span>
+                                <span><i class="fas fa-heart"></i> 797</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card border-green">
+                        <span class="badge">-50%</span>
+                        <div class="card-img">
+                            <img src="./assets/img/C.jpg" alt="Course" />
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">
+                                Trọn bộ kiến thức C Từ Cơ Bản Tới Nâng Cao
+                            </h3>
+                            <div class="price-section">
+                                <span class="old-price">4.000.000đ</span>
+                                <span class="new-price">1.999.999đ</span>
+                            </div>
+                            <div class="card-footer">
+                                <span><i class="fas fa-user"></i> 3008</span>
+                                <span><i class="fas fa-heart"></i> 597</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pagination-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </section>
+
+            <section class="category-section">
+                <div class="section-header">
+                    <div class="header-left">
+                        <h2 class="title-purple">
+                            Thành thạo Tin học văn phòng từ A - Z
+                        </h2>
+                        <p class="desc">
+                            Làm chủ Word, Excel, PowerPoint để tối ưu hóa thời
+                            gian và nâng cao hiệu suất công việc
+                        </p>
+                    </div>
+                    <a href="#" class="btn-view-all">Xem thêm</a>
+                </div>
+
+                <div class="product-grid">
+                    <div class="card border-red">
+                        <span class="badge">-50%</span>
+                        <div class="card-img">
+                            <img src="./assets/img/word.jpg" alt="Course" />
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">
+                                Thành thạo Microsoft Word từ A - Z
+                            </h3>
+                            <div class="price-section">
+                                <span class="old-price">1.000.000đ</span>
+                                <span class="new-price">499.999đ</span>
+                            </div>
+                            <div class="card-footer">
+                                <span><i class="fas fa-user"></i> 4522</span>
+                                <span><i class="fas fa-heart"></i> 1051</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card border-red">
+                        <span class="badge">-50%</span>
+                        <div class="card-img">
+                            <img
+                                src="./assets/img/powerpoint.jpg"
+                                alt="Course"
+                            />
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">
+                                Khóa Học Microsoft Powerpoint Chuyên Sâu
+                            </h3>
+                            <div class="price-section">
+                                <span class="old-price">1.000.000đ</span>
+                                <span class="new-price">499.999đ</span>
+                            </div>
+                            <div class="card-footer">
+                                <span><i class="fas fa-user"></i> 2500</span>
+                                <span><i class="fas fa-heart"></i> 400</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card border-red">
+                        <span class="badge">-50%</span>
+                        <div class="card-img">
+                            <img src="./assets/img/excel.png" alt="Course" />
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">
+                                Khóa Học Kỹ Năng Sử Dụng Công Thức Và Hàm A - Z
+                                Trong Excel
+                            </h3>
+                            <div class="price-section">
+                                <span class="old-price">1.000.000đ</span>
+                                <span class="new-price">499.999đ</span>
+                            </div>
+                            <div class="card-footer">
+                                <span><i class="fas fa-user"></i> 1560</span>
+                                <span><i class="fas fa-heart"></i> 230</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card border-red">
+                        <span class="badge">-50%</span>
+                        <div class="card-img">
+                            <img
+                                src="./assets/img/combovanphong.jpg"
+                                alt="Course"
+                            />
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">
+                                Combo Khóa Học Tin Học Văn Phòng Cho Người Mới
+                            </h3>
+                            <div class="price-section">
+                                <span class="old-price">2.000.000đ</span>
+                                <span class="new-price">999.999đ</span>
+                            </div>
+                            <div class="card-footer">
+                                <span><i class="fas fa-user"></i> 3661</span>
+                                <span><i class="fas fa-heart"></i> 356</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pagination-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </section>
+
+            <section class="category-section">
+                <div class="section-header">
+                    <div class="header-left">
+                        <h2 class="title-blue">
+                            Nâng Tầm Sự Nghiệp Với Ngoại Ngữ
+                        </h2>
+                        <p class="desc">
+                            Mở rộng thế giới ngôn ngữ với Tiếng Anh, Hàn, Nhật,
+                            Trung và nhiều ngoại ngữ khác và các chứng chỉ quốc
+                            tế
+                        </p>
+                    </div>
+                    <a href="#" class="btn-view-all">Xem thêm</a>
+                </div>
+
+                <div class="product-grid">
+                    <div class="card border-green">
+                        <span class="badge">-50%</span>
+                        <div class="card-img">
+                            <img src="./assets/img/toiec.png" alt="Course" />
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">
+                                Học TOIEC từ 0 - 450 Trong Vòng 3 Tháng
+                            </h3>
+                            <div class="price-section">
+                                <span class="old-price">2.000.000đ</span>
+                                <span class="new-price">999.999đ</span>
+                            </div>
+                            <div class="card-footer">
+                                <span><i class="fas fa-user"></i> 5680</span>
+                                <span><i class="fas fa-heart"></i> 890</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card border-green">
+                        <span class="badge">-50%</span>
+                        <div class="card-img">
+                            <img src="./assets/img/ielts.jpg" alt="Course" />
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">
+                                Lộ Trình IELTS 7.0+ Toàn Diện 4 Kỹ Năng Cho
+                                Người Mất Gốc
+                            </h3>
+                            <div class="price-section">
+                                <span class="old-price">3.000.000đ</span>
+                                <span class="new-price">1.499.999đ</span>
+                            </div>
+                            <div class="card-footer">
+                                <span><i class="fas fa-user"></i> 3450</span>
+                                <span><i class="fas fa-heart"></i> 678</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card border-green">
+                        <span class="badge">-50%</span>
+                        <div class="card-img">
+                            <img
+                                src="./assets/img/tiếng hàn.jpg"
+                                alt="Course"
+                            />
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">
+                                Tiếng Hàn Cơ Bản Cho Người Mới Bắt Đầu
+                            </h3>
+                            <div class="price-section">
+                                <span class="old-price">2.000.000đ</span>
+                                <span class="new-price">999.999đ</span>
+                            </div>
+                            <div class="card-footer">
+                                <span><i class="fas fa-user"></i> 2890</span>
+                                <span><i class="fas fa-heart"></i> 456</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card border-green">
+                        <span class="badge">-50%</span>
+                        <div class="card-img">
+                            <img
+                                src="./assets/img/tiếng trung.jpg"
+                                alt="Course"
+                            />
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">
+                                Tiếng Trung Nâng Cao Dành Cho Người Ôn Luyện Thi
+                            </h3>
+                            <div class="price-section">
+                                <span class="old-price">3.000.000đ</span>
+                                <span class="new-price">1.500.000đ</span>
+                            </div>
+                            <div class="card-footer">
+                                <span><i class="fas fa-user"></i> 4120</span>
+                                <span><i class="fas fa-heart"></i> 720</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pagination-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__top">
+                    <!-- Logo & Description Column -->
+                    <div class="footer__column footer__column--brand">
+                        <div class="footer__logo">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div class="footer__logo-text">
+                                <span class="logo-main">KHOAHOC</span>
+                                <span class="logo-sub"
+                                    >NHANH<span class="logo-dot"
+                                        >.com</span
+                                    ></span
+                                >
+                            </div>
+                        </div>
+                        <p class="footer__desc">
+                            Khoá Học Nhanh mang đến cho bạn giải pháp học tập
+                            trực tuyến tiện lợi ngay tại nhà, với mức chi phí
+                            cực kỳ tiết kiệm. Đây là lựa chọn hoàn hảo dành cho
+                            những ai đang có ngân sách hạn chế như sinh viên,
+                            thực tập sinh, người mới ra trường,... nhưng vẫn
+                            mong muốn tiếp cận các khoá học chất lượng cao trên
+                            thị trường.
+                        </p>
+                        <div class="footer__social">
+                            <a href="#" class="social-link">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fas fa-phone-alt"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Course Categories Column -->
+                    <div class="footer__column">
+                        <h3 class="footer__title">Danh Mục Khoá Học</h3>
+                        <ul class="footer__list">
+                            <li><a href="#">Combo Khoá Học</a></li>
+                            <li><a href="#">Công nghệ thông tin</a></li>
+                            <li><a href="#">Tin học văn phòng</a></li>
+                            <li><a href="#">Ngoại ngữ</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Customer Support Column -->
+                    <div class="footer__column">
+                        <h3 class="footer__title">Hỗ Trợ Khách Hàng</h3>
+                        <ul class="footer__list">
+                            <li><a href="#">Trang chủ</a></li>
+                            <li><a href="#">Về chúng tôi</a></li>
+                            <li><a href="#">Các câu hỏi thường gặp</a></li>
+                            <li><a href="#">Hướng dẫn mua hàng tự động</a></li>
+                            <li><a href="#">Tất cả khoá học</a></li>
+                            <li><a href="#">Đánh giá khách hàng</a></li>
+                            <li><a href="#">Liên hệ hỗ trợ & tư vấn</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Payment Methods Column -->
+                    <div class="footer__column">
+                        <h3 class="footer__title">Phương Thức Thanh Toán</h3>
+                        <p class="footer__payment-text">
+                            Hỗ trợ nhiều cổng thanh toán, tiện lợi cho khách
+                            hàng
+                        </p>
+                        <div class="footer__payment-icons">
+                            <div class="payment-icon">
+                                <i class="fab fa-cc-mastercard"></i>
+                            </div>
+                            <div class="payment-icon">
+                                <i class="fab fa-cc-visa"></i>
+                            </div>
+                            <div class="payment-icon payment-icon--momo">
+                                <span>MoMo</span>
+                            </div>
+                            <div class="payment-icon">
+                                <i class="fas fa-money-bill-wave"></i>
+                            </div>
+                            <div class="payment-icon">
+                                <i class="fas fa-university"></i>
+                            </div>
+                            <div class="payment-icon">
+                                <i class="fas fa-credit-card"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="./js/script.js"></script>
+    </body>
+</html>
