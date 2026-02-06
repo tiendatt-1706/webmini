@@ -39,11 +39,19 @@ ul { list-style: none; }
     align-items: center;
 }
 
-.logo {
-    font-size: 24px;
-    font-weight: 800;
-    color: #d32f2f;
-    text-transform: uppercase;
+.header .logo {
+    width: 70px;
+    height: 70px;
+    display: block;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.header .logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
 .search-bar {
@@ -220,7 +228,7 @@ ul { list-style: none; }
 .section-header {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
     margin-bottom: 20px;
     border-bottom: 1px solid #eee;
     padding-bottom: 15px;
@@ -388,21 +396,36 @@ ul { list-style: none; }
     line-height: 1.2;
 }
 
-.logo-main {
+/* .logo-main {
     font-size: 22px;
     font-weight: 800;
     color: #d32f2f;
-}
+} */
 
-.logo-sub {
+/* .logo-sub {
     font-size: 22px;
     font-weight: 800;
     color: #3498db;
-}
+} */
 
-.logo-dot {
+/* .logo-dot {
     color: var(--primary-color);
     font-size: 16px;
+} */
+
+.footer .logo {
+    width: 100px;
+    height: 100px;
+    display: block;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.footer .logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
 .footer__desc {
